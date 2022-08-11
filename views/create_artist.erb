@@ -1,0 +1,11 @@
+<form action="/artists" method="POST">
+<h1>Please add your album here:</h1>
+  <p>Name: <input type="text" name="name"></p>
+  <p>Genre: <input type="text" name="genre"></p>
+
+  <p>Click here when finished: <input type="submit" value="Submit the form"></p>
+</form>
+
+<p><% if @invalid_params %>
+<p>Please complete every box</p>
+<% end %>
